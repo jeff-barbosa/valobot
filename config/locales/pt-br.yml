@@ -1,0 +1,8 @@
+pt-br:
+  commands:
+    commands_command:
+      name: 'comandos'
+      description: 'A lista de comandos que o Valobot consegue entender'
+      class:
+        call:
+          message: "Olá! Abaixo você pode verificar a lista de comandos disponíveis:\n\n%{commands}"

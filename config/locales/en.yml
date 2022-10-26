@@ -1,0 +1,8 @@
+en:
+  commands:
+    commands_command:
+      name: 'commands'
+      description: 'The commands list that Valobot can understand'
+      class:
+        call:
+          message: "Hey! Right below you can check a list of commands you can use:\n\n%{commands}"
