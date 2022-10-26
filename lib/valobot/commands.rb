@@ -2,9 +2,9 @@
 
 module Commands
   COMMAND_MAPPING = {
-    comandos: {
+    I18n.t('commands.commands_command.name') => {
       command_class: 'Commands::CommandList',
-      command_description: 'A listinha de comandos que o Coach Dollynho consegue entender'
+      command_description: I18n.t('commands.commands_command.description')
     }
-  }.freeze
+  }.transform_keys(&:to_sym).freeze
 end

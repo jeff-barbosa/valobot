@@ -6,5 +6,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.1'
 
 gem 'discordrb'
+gem 'i18n'
 gem 'rspec'
 gem 'pry'

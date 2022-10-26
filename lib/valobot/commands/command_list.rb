@@ -7,7 +7,7 @@ module Commands
         "**%#{command}**\n*#{command_data[:command_description]}*\n\n"
       end.join
 
-      "Olá amiguinho, aqui está a listinha de comandinhos:\n\n#{commands}"
+      I18n.t('commands.commands_command.class.call.message', commands: commands)
     end
   end
 end
