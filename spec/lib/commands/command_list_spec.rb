@@ -12,7 +12,7 @@ describe Commands::CommandList do
       result = subject
 
       Commands::COMMAND_MAPPING.each do |command, command_data|
-        expect(result =~ /#{command.to_s}/).to be_positive
+        expect(result =~ /#{command}/).to be_positive
         expect(result =~ /#{command_data[:command_description]}/).to be_positive
       end
     end
