@@ -7,5 +7,6 @@ ruby '3.1.2'
 
 gem 'discordrb'
 gem 'i18n'
-gem 'rspec'
 gem 'pry'
+gem 'rspec'
+gem 'rubocop'
