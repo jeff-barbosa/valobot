@@ -6,3 +6,15 @@ pt-br:
       class:
         call:
           message: "Olá! Abaixo você pode verificar a lista de comandos disponíveis:\n\n%{commands}"
+    choose_my_agent_command:
+      name: 'escolhe_agente'
+      description: "Escolhe um agente aleatório para você. Você também pode especificar uma classe como duelista, iniciador, controlador ou sentinela. Exemplos:\n\n- %escolhe_agente\n- %escolhe_agente iniciador"
+      class:
+        call:
+          duelist: 'duelista'
+          initiator: 'iniciador'
+          controller: 'controlador'
+          sentinel: 'sentinela'
+          invalid_class: "A classe **%{class}** não é uma classe de agente válida!"
+          agent_chosen_class: "Eu escolhi o(a) %{class} **%{agent}** para você!"
+          agent_chosen: "Eu escolhi o(a) agente **%{agent}** para você!"

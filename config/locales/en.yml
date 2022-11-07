@@ -6,3 +6,15 @@ en:
       class:
         call:
           message: "Hey! Right below you can check a list of commands you can use:\n\n%{commands}"
+    choose_my_agent_command:
+      name: 'choose_my_agent'
+      description: "Chooses a random agent for you. You can also specify the agent class as duelist, initiator, controller or sentinel. Examples:\n\n- %choose_my_agent\n- %choose_my_agent initiator"
+      class:
+        call:
+          duelist: 'duelist'
+          initiator: 'initiator'
+          controller: 'controller'
+          sentinel: 'sentinel'
+          invalid_class: "The class **%{class}** is not a valid agent class!"
+          agent_chosen_class: "I have chosen the %{class} **%{agent}** for you!"
+          agent_chosen: "I have chosen the agent **%{agent}** for you!"

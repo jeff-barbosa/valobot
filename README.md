@@ -1,7 +1,6 @@
 # Valobot
 
-A simple Discord bot written in Ruby
-
+A simple Valorant Discord bot written in Ruby
 
 # Installation
 
