@@ -1,9 +1,23 @@
 AllCops:
   NewCops: enable
   SuggestExtensions: false
+  Exclude:
+    - config/schema.rb
+    - config/seed.rb
+    - Rakefile
 
 Style/Documentation:
   Enabled: false
 
 Style/HashSyntax:
   EnforcedShorthandSyntax: never
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*

@@ -1,6 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (7.0.4)
+      activesupport (= 7.0.4)
+    activerecord (7.0.4)
+      activemodel (= 7.0.4)
+      activesupport (= 7.0.4)
+    activesupport (7.0.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     ast (2.4.2)
     coderay (1.1.3)
     concurrent-ruby (1.1.10)
@@ -27,16 +37,19 @@ GEM
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
+    minitest (5.16.3)
     netrc (0.11.0)
     opus-ruby (1.0.1)
       ffi
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)
+    pg (1.4.4)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
     rainbow (3.1.1)
+    rake (13.0.6)
     regexp_parser (2.6.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
@@ -70,6 +83,10 @@ GEM
     rubocop-ast (1.23.0)
       parser (>= 3.1.1.0)
     ruby-progressbar (1.11.0)
+    shoulda-matchers (5.2.0)
+      activesupport (>= 5.2.0)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
@@ -83,11 +100,15 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord
   discordrb
   i18n
+  pg
   pry
+  rake
   rspec
   rubocop
+  shoulda-matchers
 
 RUBY VERSION
    ruby 3.1.2p20

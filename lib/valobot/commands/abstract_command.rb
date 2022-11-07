@@ -6,7 +6,7 @@ module Commands
 
     def initialize(event, *args)
       @event = event
-      @args = args.flatten
+      @args = args.flatten || []
     end
 
     def call
